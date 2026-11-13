@@ -20,16 +20,7 @@
         "id": "_xN2dcl1xBh3",
         "outputId": "b113d141-2f80-4cb7-c269-82921d5d7b0e"
       },
-      "outputs": [
-        {
-          "output_type": "stream",
-          "name": "stdout",
-          "text": [
-            "✅ تم فك الضغط بنجاح!\n",
-            "📄 الملف الموجود: main.py\n"
-          ]
-        }
-      ],
+      "outputs": [],
       "source": [
         "import os\n",
         "import zipfile\n",
@@ -66,42 +57,7 @@
         "id": "v9y--yO4xfGf",
         "outputId": "95773d7e-d211-4030-c4d5-2b530581a7c0"
       },
-      "outputs": [
-        {
-          "output_type": "stream",
-          "name": "stdout",
-          "text": [
-            "⏳ جاري تشغيل pytest الحقيقي...\n",
-            "\n",
-            "=== Exit Code (0 يعني نجاح، 1 يعني فشل): ===\n",
-            "1\n",
-            "\n",
-            "=== سجل التنفيذ (اللي راح يقراه المصحح): ===\n",
-            "============================= test session starts ==============================\n",
-            "platform linux -- Python 3.13.18, pytest-8.4.2, pluggy-1.7.0 -- /usr/bin/python3\n",
-            "cachedir: .pytest_cache\n",
-            "rootdir: /content\n",
-            "plugins: anyio-4.16.0, langsmith-0.14.17, typeguard-4.6.0, platformdirs-4.14.3\n",
-            "collecting ... collected 1 item\n",
-            "\n",
-            "extracted/test_main.py::test_add FAILED                                  [100%]\n",
-            "\n",
-            "=================================== FAILURES ===================================\n",
-            "___________________________________ test_add ___________________________________\n",
-            "\n",
-            "    def test_add():\n",
-            ">       assert add(2, 3) == 5\n",
-            "E       assert -1 == 5\n",
-            "E        +  where -1 = add(2, 3)\n",
-            "\n",
-            "extracted/test_main.py:4: AssertionError\n",
-            "=========================== short test summary info ============================\n",
-            "FAILED extracted/test_main.py::test_add - assert -1 == 5\n",
-            "============================== 1 failed in 0.04s ===============================\n",
-            "\n"
-          ]
-        }
-      ],
+      "outputs": [],
       "source": [
         "# 1. نتأكدوا بلي pytest مثبت\n",
         "!pip install pytest -q\n",
@@ -142,19 +98,7 @@
         "id": "V_sDoTQIyTJk",
         "outputId": "761e452c-ad9c-4663-ff32-1a123c26124a"
       },
-      "outputs": [
-        {
-          "output_type": "stream",
-          "name": "stdout",
-          "text": [
-            "🔑 يرجى إدخال مفتاح OpenRouter الخاص بك (لن يظهر على الشاشة):\n",
-            "API Key: ··········\n",
-            "\n",
-            "⏳ جاري إرسال الكود الخاطئ إلى الذكاء الاصطناعي (DeepSeek)...\n",
-            "❌ خطأ في الاتصال بـ OpenRouter: {'error': {'message': 'This request requires more credits, or fewer max_tokens. You requested up to 16384 tokens, but can only afford 14430. To increase, visit https://openrouter.ai/settings/credits and upgrade to a paid account', 'code': 402, 'metadata': {'limit_source': 'openrouter_credits', 'remedy_hint': 'Add credits at https://openrouter.ai/settings/credits, or lower max_tokens / prompt size to fit your remaining balance.', 'provider_name': None, 'previous_errors': [{'code': 402, 'message': 'This request requires more credits, or fewer max_tokens. You requested up to 16000 tokens, but can only afford 12484. To increase, visit https://openrouter.ai/settings/credits and upgrade to a paid account'}]}}, 'user_id': 'user_3IjgINVkgpz99ipr2TJruerA4tc'}\n"
-          ]
-        }
-      ],
+      "outputs": [],
       "source": [
         "import requests\n",
         "import json\n",
@@ -238,33 +182,7 @@
         "id": "Ih-syS6gzvGs",
         "outputId": "f6cdde37-ee2b-4bac-9831-0b2beca44816"
       },
-      "outputs": [
-        {
-          "output_type": "stream",
-          "name": "stdout",
-          "text": [
-            "🔑 يرجى إدخال مفتاح OpenRouter الخاص بك (لن يظهر على الشاشة):\n",
-            "API Key: ··········\n",
-            "🚀 بدء المهمة: Write a function called 'multiply' that multiplies two numbers, and write a test for it.\n",
-            "\n",
-            "🤖 [Coder] جاري كتابة الكود والاختبارات...\n"
-          ]
-        },
-        {
-          "output_type": "error",
-          "ename": "KeyError",
-          "evalue": "'choices'",
-          "traceback": [
-            "\u001b[0;31m---------------------------------------------------------------------------\u001b[0m",
-            "\u001b[0;31mKeyError\u001b[0m                                  Traceback (most recent call last)",
-            "\u001b[0;32m/tmp/ipykernel_17065/470196278.py\u001b[0m in \u001b[0;36m<cell line: 0>\u001b[0;34m()\u001b[0m\n\u001b[1;32m     94\u001b[0m \u001b[0;31m# جرب مهمة جديدة من عندك\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n\u001b[1;32m     95\u001b[0m \u001b[0mmy_task\u001b[0m \u001b[0;34m=\u001b[0m \u001b[0;34m\"Write a function called 'multiply' that multiplies two numbers, and write a test for it.\"\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n\u001b[0;32m---> 96\u001b[0;31m \u001b[0mrun_ai_workforce\u001b[0m\u001b[0;34m(\u001b[0m\u001b[0mmy_task\u001b[0m\u001b[0;34m)\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n\u001b[0m",
-            "\u001b[0;32m/tmp/ipykernel_17065/470196278.py\u001b[0m in \u001b[0;36mrun_ai_workforce\u001b[0;34m(task)\u001b[0m\n\u001b[1;32m     76\u001b[0m \u001b[0;34m\u001b[0m\u001b[0m\n\u001b[1;32m     77\u001b[0m     \u001b[0;31m# 1. المبرمج يكتب الكود\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n\u001b[0;32m---> 78\u001b[0;31m     \u001b[0mcoder_agent\u001b[0m\u001b[0;34m(\u001b[0m\u001b[0mtask\u001b[0m\u001b[0;34m)\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n\u001b[0m\u001b[1;32m     79\u001b[0m \u001b[0;34m\u001b[0m\u001b[0m\n\u001b[1;32m     80\u001b[0m     \u001b[0;31m# 2. حلقة التكرار (Tester -> Debugger)\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n",
-            "\u001b[0;32m/tmp/ipykernel_17065/470196278.py\u001b[0m in \u001b[0;36mcoder_agent\u001b[0;34m(task)\u001b[0m\n\u001b[1;32m     36\u001b[0m     \u001b[0mprint\u001b[0m\u001b[0;34m(\u001b[0m\u001b[0;34m\"\\n🤖 [Coder] جاري كتابة الكود والاختبارات...\"\u001b[0m\u001b[0;34m)\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n\u001b[1;32m     37\u001b[0m     \u001b[0msys_prompt\u001b[0m \u001b[0;34m=\u001b[0m \u001b[0;34m\"You are a Coder. Write Python code and pytest tests. Output the code for 'main.py', then the code for 'test_main.py'. Separate them with exactly '---TEST---'.\"\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n\u001b[0;32m---> 38\u001b[0;31m     \u001b[0mresponse\u001b[0m \u001b[0;34m=\u001b[0m \u001b[0mcall_llm\u001b[0m\u001b[0;34m(\u001b[0m\u001b[0msys_prompt\u001b[0m\u001b[0;34m,\u001b[0m \u001b[0mtask\u001b[0m\u001b[0;34m)\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n\u001b[0m\u001b[1;32m     39\u001b[0m \u001b[0;34m\u001b[0m\u001b[0m\n\u001b[1;32m     40\u001b[0m     \u001b[0;31m# نفصلوا الكود عن الاختبار\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n",
-            "\u001b[0;32m/tmp/ipykernel_17065/470196278.py\u001b[0m in \u001b[0;36mcall_llm\u001b[0;34m(system_prompt, user_prompt)\u001b[0m\n\u001b[1;32m     24\u001b[0m     }\n\u001b[1;32m     25\u001b[0m     \u001b[0mresponse\u001b[0m \u001b[0;34m=\u001b[0m \u001b[0mrequests\u001b[0m\u001b[0;34m.\u001b[0m\u001b[0mpost\u001b[0m\u001b[0;34m(\u001b[0m\u001b[0murl\u001b[0m\u001b[0;34m,\u001b[0m \u001b[0mheaders\u001b[0m\u001b[0;34m=\u001b[0m\u001b[0mheaders\u001b[0m\u001b[0;34m,\u001b[0m \u001b[0mjson\u001b[0m\u001b[0;34m=\u001b[0m\u001b[0mdata\u001b[0m\u001b[0;34m)\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n\u001b[0;32m---> 26\u001b[0;31m     \u001b[0;32mreturn\u001b[0m \u001b[0mresponse\u001b[0m\u001b[0;34m.\u001b[0m\u001b[0mjson\u001b[0m\u001b[0;34m(\u001b[0m\u001b[0;34m)\u001b[0m\u001b[0;34m[\u001b[0m\u001b[0;34m\"choices\"\u001b[0m\u001b[0;34m]\u001b[0m\u001b[0;34m[\u001b[0m\u001b[0;36m0\u001b[0m\u001b[0;34m]\u001b[0m\u001b[0;34m[\u001b[0m\u001b[0;34m\"message\"\u001b[0m\u001b[0;34m]\u001b[0m\u001b[0;34m[\u001b[0m\u001b[0;34m\"content\"\u001b[0m\u001b[0;34m]\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n\u001b[0m\u001b[1;32m     27\u001b[0m \u001b[0;34m\u001b[0m\u001b[0m\n\u001b[1;32m     28\u001b[0m \u001b[0;31m# --- 2. دالة لاستخراج الكود من رد الـ AI ---\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n",
-            "\u001b[0;31mKeyError\u001b[0m: 'choices'"
-          ]
-        }
-      ],
+      "outputs": [],
       "source": [
         "import requests\n",
         "import json\n",
@@ -1342,40 +1260,7 @@
         "outputId": "c20d42f3-4e34-4a20-9530-54266880b560"
       },
       "execution_count": null,
-      "outputs": [
-        {
-          "output_type": "stream",
-          "name": "stdout",
-          "text": [
-            "🔑 يرجى إدخال مفتاح OpenRouter الخاص بك:\n",
-            "API Key: ··········\n",
-            "Colab notebook detected. To show errors in colab notebook, set debug=True in launch()\n",
-            "* Running on public URL: https://f6f16b0bd0b5c00e7d.gradio.live\n",
-            "\n",
-            "This share link is temporary and will last for up to 1 week (best effort). For free permanent hosting and GPU upgrades, run `gradio deploy` from the terminal in the working directory to deploy to Hugging Face Spaces (https://huggingface.co/spaces)\n"
-          ]
-        },
-        {
-          "output_type": "display_data",
-          "data": {
-            "text/plain": [
-              "<IPython.core.display.HTML object>"
-            ],
-            "text/html": [
-              "<div><iframe src=\"https://f6f16b0bd0b5c00e7d.gradio.live\" width=\"100%\" height=\"500\" allow=\"autoplay; camera; microphone; clipboard-read; clipboard-write;\" frameborder=\"0\" allowfullscreen></iframe></div>"
-            ]
-          },
-          "metadata": {}
-        },
-        {
-          "output_type": "execute_result",
-          "data": {
-            "text/plain": []
-          },
-          "metadata": {},
-          "execution_count": 11
-        }
-      ]
+      "outputs": []
     }
   ],
   "metadata": {
